@@ -1,0 +1,22 @@
+{
+  "activities": [
+    {
+      "id": 1,
+      "to_do": "Wake-up and Design",
+      "time": "08:00",
+      "set_reminder": true
+    },
+    {
+      "id": 2,
+      "to_do": "Take Break-fast",
+      "time": "10:00",
+      "set_reminder": false
+    },
+    {
+      "id": 3,
+      "to_do": "Write some code",
+      "time": "15:00",
+      "set_reminder": true
+    }
+  ]
+}

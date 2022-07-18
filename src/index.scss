@@ -1,4 +1,5 @@
 $primary_color: #ececec;
+$secondary_color: #ff2f00;
 $font_color: #121212;
 
 * {
@@ -8,9 +9,59 @@ $font_color: #121212;
   font-family: urbanist;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
 body {
   background-color: $primary_color;
   color: $font_color;
   height: 100vh;
   width: 100vw;
+}
+
+.App {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff4f1;
+  border-radius: 10px;
+}
+
+.navbar {
+  padding: 20px 0;
+  border-bottom: 1px solid $secondary_color;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    font-weight: 1000;
+    font-size: 2rem;
+    color: $font_color;
+
+    span {
+      color: $secondary_color;
+    }
+  }
+
+  a.new_task {
+    padding: 10px 14px;
+    border-radius: 5px;
+    border: none;
+    background-color: $secondary_color;
+    color: #fff4f1;
+    transition: background-color 500ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #ee330a;
+    }
+  }
 }

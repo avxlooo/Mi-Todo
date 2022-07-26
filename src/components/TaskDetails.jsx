@@ -8,10 +8,13 @@ const TaskDetails = () => {
     <div className="task-details">
       {fetching && <div>Fetching data...</div>}
       {data && (
-        <div>
+        <div className="content">
           <h3>{data.to_do}</h3>
           <p>{data.body}</p>
-          <button>Done</button>
+          <button className="done">Delete Task</button>
+          <button className="set">
+            {data.set_reminder ? `set reminder off` : `set reminder on`}
+          </button>
         </div>
       )}
     </div>

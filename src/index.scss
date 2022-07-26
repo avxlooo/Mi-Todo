@@ -94,6 +94,42 @@ body {
   }
 }
 
+.task-details {
+  h3 {
+    margin-bottom: 20px;
+    color: $secondary_color;
+  }
+
+  .content p {
+    color: #121212;
+    width: 350px;
+    margin-bottom: 20px;
+  }
+  .done,
+  .set {
+    padding: 10px 14px;
+    border-radius: 5px;
+    border: none;
+    background-color: none;
+    color: #121212;
+    transition: background-color 500ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .done {
+    background-color: $secondary_color;
+    color: #fff4f1;
+    margin-right: 20px;
+    &:hover {
+      cursor: pointer;
+      background-color: #ee330a;
+    }
+  }
+}
+
 @media screen and (max-width: 760px) {
   .App {
     width: 100vw;

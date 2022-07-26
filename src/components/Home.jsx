@@ -4,21 +4,10 @@ import { Routes, Route } from "react-router-dom";
 
 //components
 import Task from "./Task";
+import useFetch from '../Custom hook/useFetch.jsx'
 
 const Home = () => {
-  const [data, setData] = useState([]);
-  const [fetching, setFetching] = useState(true);
-
-  async function getData() {
-    const response = await fetch("http://localhost:8000/activities");
-    const data = await response.json();
-    setData(data);
-    setFetching(false);
-  }
-
-  useEffect(() => {
-    getData();
-  }, []);
+  const { data, fetching } = useFetch("http://localhost:8080/activities");
 
   return (
     <div className="home">

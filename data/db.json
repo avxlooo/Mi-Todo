@@ -4,19 +4,22 @@
       "id": 1,
       "to_do": "Wake-up and Design",
       "time": "08:00",
-      "set_reminder": true
+      "set_reminder": true,
+      "body":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia fugit necessitatibus quos sunt, voluptates dolor perspiciatis veniam porro asperiores sapiente."
     },
     {
       "id": 2,
       "to_do": "Take Break-fast",
       "time": "10:00",
-      "set_reminder": false
+      "set_reminder": false,
+      "body":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia fugit necessitatibus quos sunt, voluptates dolor perspiciatis veniam porro asperiores sapiente."
     },
     {
       "id": 3,
       "to_do": "Write some code",
       "time": "15:00",
-      "set_reminder": true
+      "set_reminder": true,
+      "body":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia fugit necessitatibus quos sunt, voluptates dolor perspiciatis veniam porro asperiores sapiente."
     }
   ]
 }

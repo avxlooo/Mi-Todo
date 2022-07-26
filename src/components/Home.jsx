@@ -20,6 +20,7 @@ const Home = () => {
               to_do={task.to_do}
               time={task.time}
               set_reminder={task.set_reminder}
+              id = {task.id}
             />
           ))}
       </div>
